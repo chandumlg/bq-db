@@ -6,13 +6,13 @@ inputs:
       with_entity_ids:
         - user
       with_columns:
-        - name: timestamp
+        - name: timestamp2
         - name: user_id
         - name: anonymous_id
         - name: email
     app_defaults:
       table: profiles-builder.BENCHMARKING_SYNTH_DATA.MARKETING_WEBSITE__IDENTIFIES
-      occurred_at_col: timestamp
+      occurred_at_col: timestamp2
       ids:
         - select: "user_id"
           type: user_id
@@ -30,12 +30,12 @@ inputs:
       with_entity_ids:
         - user
       with_columns:
-        - name: timestamp
+        - name: timestamp2
         - name: user_id
         - name: anonymous_id
     app_defaults:
       table: profiles-builder.BENCHMARKING_SYNTH_DATA.ANDROID_APP__TRACKS
-      occurred_at_col: timestamp
+      occurred_at_col: timestamp2
       ids:
         - select: "user_id"
           type: user_id

@@ -1,7 +1,7 @@
 # Project name
 name: sample_attribution
 # Project's yaml schema version
-schema_version: 69
+schema_version: 91
 # WH Connection to use.
 connection: bqchandu-qa
 # Model folders to use.
@@ -43,6 +43,8 @@ id_types:
 #packages:
 #  - name: corelib
 #    url: "https://github.com/rudderlabs/rudderstack-profiles-corelib/tag/schema_{{best_schema_version}}"
+
+retention_period: 720h0m0s
 
 # In the url https://github.com/rudderlabs/rudderstack-profiles-corelib/tag/schema_{{best_schema_version}}, {{best_schema_version}} is
 #  a placeholder. The program will figure out the best compatible version.
